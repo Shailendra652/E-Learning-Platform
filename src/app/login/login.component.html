@@ -10,7 +10,7 @@
         <!-- Body section -->
         <div class="row">
           <div class="left-section col-md-6 col-sm-12 py-lg-6 py-md-6">
-            <!-- Textbox section -->
+            
             <div class="text-section">
               <h1 class="text-section-heading">Online Training</h1>
               <p class="text-section-text">
@@ -20,20 +20,20 @@
                 aliquet auctor, diam arcu ultricies velit, in placerat tortor
                 erat vitae ex.
               </p>
-              <!-- Learn more button -->
+              
               <button type="button" class="login-btn text-center">
                 LEARN MORE
               </button>
             </div>
           </div>
-          <!-- Form section -->
+          
           <div class="right-section col-md-6 col-sm-12">
             <div class="form-section">
              
               <form [formGroup]="loginForm" id="login-form" class="form-sec"  >
                 <h1 class="text-section-heading pt-3" style="margin-bottom: 10px;">Sign In</h1>
                 <div class="form-inner-sec">
-                  <!-- Email input -->
+                  <!-- Email  -->
                   <input
                     class="email-input"
                     type="text"
@@ -41,7 +41,7 @@
                     id="username"
                     formControlName ="user"
                   />
-                  <!-- Password input -->
+                  <!-- Password  -->
                   <input
                     class="pass-input"
                     type="password"
@@ -55,13 +55,13 @@
                     <a class="forgot-pass-link" href="#">Forgot Password</a>
                   </div>
                 </div>
-                <!-- Sign in button -->
+                
                 <button (click)="loginUser()" class="sign-in-btn" id="sign-in-btn" type="submit">
                   SIGN IN
                 </button>
               </form>
             </div>
-            <!-- </div> -->
+         
           </div>
         </div>
       </div>
