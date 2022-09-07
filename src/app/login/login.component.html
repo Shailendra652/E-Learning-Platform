@@ -1,0 +1,88 @@
+  <div>
+    <div
+      class="login-container container-fluid d-md-flex justify-content-start"
+    >
+      <div class="body-container">
+        <!-- logo -->
+        <div class="brand-logo">
+          <img src="../../assets/Logo_Desktop_Tab.png" />
+        </div>
+        <!-- Body section -->
+        <div class="row">
+          <div class="left-section col-md-6 col-sm-12 py-lg-6 py-md-6">
+            <!-- Textbox section -->
+            <div class="text-section">
+              <h1 class="text-section-heading">Online Training</h1>
+              <p class="text-section-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at
+                ullamcorper urna. Fusce sed interdum nunc. Cras tellus libero,
+                rutrum in purus ac, feugiat venenatis sem. Morbi ultrices, est a
+                aliquet auctor, diam arcu ultricies velit, in placerat tortor
+                erat vitae ex.
+              </p>
+              <!-- Learn more button -->
+              <button type="button" class="login-btn text-center">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+          <!-- Form section -->
+          <div class="right-section col-md-6 col-sm-12">
+            <div class="form-section">
+             
+              <form [formGroup]="loginForm" id="login-form" class="form-sec"  >
+                <h1 class="text-section-heading pt-3" style="margin-bottom: 10px;">Sign In</h1>
+                <div class="form-inner-sec">
+                  <!-- Email input -->
+                  <input
+                    class="email-input"
+                    type="text"
+                    placeholder="User Name"
+                    id="username"
+                    formControlName ="user"
+                  />
+                  <!-- Password input -->
+                  <input
+                    class="pass-input"
+                    type="password"
+                    placeholder="Password"
+                    id="password"
+                    formControlName ="password"
+
+                  />
+                  <!-- Forgot password link -->
+                  <div class="d-flex justify-content-end w-100">
+                    <a class="forgot-pass-link" href="#">Forgot Password</a>
+                  </div>
+                </div>
+                <!-- Sign in button -->
+                <button (click)="loginUser()" class="sign-in-btn" id="sign-in-btn" type="submit">
+                  SIGN IN
+                </button>
+              </form>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container row g-0">
+      <div class="help col-md-6 col-sm-2 d-flex justify-content-xs-end">
+        <p class="chat-para d-flex justify-content-xs-end">
+          Need help?
+          <a class="chat-link text-decoration-none" href=""
+            >&nbsp;Chat with Us</a
+          >
+        </p>
+      </div>
+      <div class="d-flex col-md-6 col-sm-2 justify-content-end">
+        <p class="copyright chat-para">
+          Copyrights &copy; 2021. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </div>
+

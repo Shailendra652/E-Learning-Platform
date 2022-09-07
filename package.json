@@ -1,6 +1,7 @@
 {
   "name": "ict",
   "version": "0.0.0",
+  "author": "Shailendra Saroj-2152887",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
